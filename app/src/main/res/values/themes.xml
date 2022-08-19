@@ -1,0 +1,114 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.EVIApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue_700</item>
+        <item name="colorPrimaryVariant">@color/blue_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blue_500</item>
+        <item name="colorSecondaryVariant">@color/blue_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="ThemeOverlay.Search" parent="Theme.EVIApp">
+        <!-- Primary brand color. -->
+        <item name="android:editTextColor">@color/black</item>
+        <item name="android:textColorHint">@color/grey</item>
+
+    </style>
+
+
+    <!-- Mid Way Login & Registration Page - Botton -->
+    <style name="Button_White">
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/dark_purple</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Button_Blue">
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:backgroundTint" tools:ignore="NewApi">@color/blue_700</item>
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Main Login & Registration Page Style -->
+    <style name="Title">
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SubTitle">
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:textColorHint">@color/grey</item>
+        <item name="hintTextColor">@color/grey</item>
+        <item name="startIconTint">@color/primary_color</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+    </style>
+
+    <style name="SetTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:textColorHint">@color/grey</item>
+        <item name="hintTextColor">@color/grey</item>
+        <item name="startIconTint">@color/dark_purple</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+    </style>
+
+    <style name="TextInputEditText" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:background">@drawable/tg_text_field</item>
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="PointTitle">
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="PointNotes">
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="backButton">
+        <item name="background">@drawable/roundbutton</item>
+        <item name="android:src">@drawable/ic_right</item>
+    </style>
+
+    <style name="frontButton">
+
+    </style>
+
+    <!-- Switches -->
+    <style name="NightModeSwitch">
+        <item name="colorControlActivated">@color/night_mode</item>
+        <item name="colorSwitchThumbNormal">@color/white</item>
+        <item name="android:colorForeground">#99FFFFFF</item>
+    </style>
+
+    <style name="NotificationSwitch">
+        <item name="colorControlActivated">@color/blue_aura</item>
+        <item name="colorSwitchThumbNormal">@color/white</item>
+        <item name="android:colorForeground">#99FFFFFF</item>
+    </style>
+
+</resources>

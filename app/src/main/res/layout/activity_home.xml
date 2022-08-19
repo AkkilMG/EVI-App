@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomeActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/drawerLayout"
+    android:background="@color/white">
+
+        <!--<androidx.drawerlayout.widget.DrawerLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/drawerLayout">
+
+                 Nav Bar
+                <com.google.android.material.navigation.NavigationView
+                    android:id="@+id/nav_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:headerLayout="@layout/nav_header"
+                    app:menu="@menu/nav_menu"
+                    android:background="@color/white"
+                    app:itemTextColor="@color/black"
+                    app:itemIconTint="@color/blue_700"
+                    android:layout_gravity="start"
+                    android:fitsSystemWindows="true"/>
+
+        </androidx.drawerlayout.widget.DrawerLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    app:layout_constraintHeight_percent="0.3"
+                    android:layout_height="0dp"
+                    android:background="@drawable/card"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:id="@+id/imageview"
+                    app:layout_constraintHorizontal_bias="0.0"/>
+                <TextView android:layout_width="wrap_content"
+                    android:text="Unknown"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2"
+                    app:layout_constraintStart_toEndOf="@+id/profile_image"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/emailText"
+                    app:layout_constraintTop_toTopOf="@+id/profile_image"/>
+
+                <TextView android:layout_width="wrap_content"
+                    android:text="Unknown"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content" app:layout_constraintStart_toEndOf="@+id/profile_image"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/profile_image" android:id="@+id/emailText"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2" android:layout_marginStart="8dp"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_circle_contact_boy"
+                    app:civ_border_width="3dp"
+                    android:id="@+id/profile_image"
+                    app:civ_border_color="#ffffff"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/cardView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="32dp"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:tint="@color/white"
+                    android:src="@drawable/ic_notifications"
+                    android:layout_height="30dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="24dp"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="@+id/textView2"
+                    android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="@+id/profile_image"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="24dp"
+                    app:cardCornerRadius="12dp"
+                    app:layout_constraintHeight_percent="0.25"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintTop_toBottomOf="@+id/imageview"
+                    app:layout_constraintBottom_toTopOf="@+id/imageview"
+                    app:layout_constraintVertical_bias="0.17000002"
+                    app:cardBackgroundColor="@color/white"
+                    android:id="@+id/cardView">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/quickaccess"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:padding="15dp"
+                                    android:text="Quick Access"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/black"/>
+                                <!--<TextView android:layout_width="wrap_content"
+                                    android:text=""
+                                    android:layout_alignParentEnd="true"
+                                    android:textSize="15sp"
+                                    android:padding="15dp"
+                                    android:id="@+id/"
+                                    android:layout_height="wrap_content"/>-->
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_below="@id/quickaccess"
+                                    android:background="#53d3d3d3"
+                                    android:layout_height="1dp"
+                                    />
+                        </RelativeLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="wrap_content">
+                                <ImageView android:layout_width="35dp"
+                                    android:src="@drawable/ic_internship"
+                                    android:layout_height="35dp"
+                                    android:id="@+id/InternshipHome"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@+id/FundingHome"
+                                    android:layout_marginTop="8dp"
+                                    app:layout_constraintTop_toTopOf="parent"/>
+                                <ImageView android:layout_width="35dp"
+                                    android:src="@drawable/ic_funding"
+                                    android:layout_height="35dp"
+                                    android:id="@+id/FundingHome"
+                                    app:layout_constraintStart_toEndOf="@+id/InternshipHome"
+                                    app:layout_constraintEnd_toStartOf="@+id/MessageHome"
+                                    android:layout_marginTop="8dp"
+                                    app:layout_constraintTop_toTopOf="parent"/>
+                                <ImageView android:layout_width="35dp"
+                                    android:src="@drawable/ic_message"
+                                    android:layout_height="35dp"
+                                    android:id="@+id/MessageHome"
+                                    app:layout_constraintStart_toEndOf="@+id/FundingHome"
+                                    app:layout_constraintEnd_toStartOf="@+id/ReportHome"
+                                    android:layout_marginTop="8dp"
+                                    app:layout_constraintTop_toTopOf="parent"/>
+                                <ImageView android:layout_width="35dp"
+                                    android:src="@drawable/ic_report"
+                                    android:layout_height="35dp"
+                                    android:id="@+id/ReportHome"
+                                    app:layout_constraintStart_toEndOf="@+id/MessageHome"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    android:layout_marginTop="8dp"
+                                    app:layout_constraintTop_toTopOf="parent"/>
+
+
+                                <TextView android:layout_width="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:text="Internship"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintEnd_toEndOf="@+id/InternshipHome"
+                                    app:layout_constraintStart_toStartOf="@+id/InternshipHome"
+                                    app:layout_constraintTop_toBottomOf="@+id/InternshipHome" android:id="@+id/textView"
+                                    android:layout_marginTop="8dp"/>
+                                <TextView android:layout_width="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:text="Funding"
+                                    android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="@+id/FundingHome"
+                                    app:layout_constraintStart_toStartOf="@+id/FundingHome"
+                                    app:layout_constraintTop_toBottomOf="@+id/FundingHome" android:layout_marginTop="8dp"/>
+                                <TextView android:layout_width="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:text="Message"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintEnd_toEndOf="@+id/MessageHome"
+                                    app:layout_constraintStart_toStartOf="@+id/MessageHome"
+                                    app:layout_constraintTop_toBottomOf="@+id/MessageHome"
+                                    android:layout_marginTop="8dp"/>
+                                <TextView android:layout_width="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:text="Report"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintEnd_toEndOf="@+id/ReportHome"
+                                    app:layout_constraintStart_toStartOf="@+id/ReportHome"
+                                    app:layout_constraintTop_toBottomOf="@+id/ReportHome"
+                                    android:layout_marginTop="8dp"/>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:scrollbars="none"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_margin="24dp"/>
+
+                <!--<androidx.cardview.widget.CardView
+                    android:id="@+id/unde"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:cardCornerRadius="12dp"
+                    app:layout_constraintHeight_percent="0.25"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintTop_toBottomOf="@+id/recyclerview1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.17000002"
+                    app:cardBackgroundColor="@color/white">
+
+
+
+                </androidx.cardview.widget.CardView>-->
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:headerLayout="@layout/nav_header"
+            app:menu="@menu/nav_menu"
+            android:background="@color/white"
+            app:itemTextColor="@color/black"
+            app:itemIconTint="@color/blue_700"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true">
+
+
+        </com.google.android.material.navigation.NavigationView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

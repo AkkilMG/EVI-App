@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">EVI App</string>
+    <string name="app_description">EVI App</string>
+    <string name="app_version">1.0</string>
+
+    <!-- About -->
+    <string name="app_author">Akkil M G</string>
+    <!-- About me-->
+
+
+    <string name="about">I am Akkil MG; A curious Web and Web developer, who loves to learn and explore new technologies. I love to contribute to and talk about new projects initiated.\n\nBy the way, I am a first year (2021–22) Information Science Engineering student from Mangaluru, India. I am a Community member of Google Developer Student Club.</string>
+
+
+    <!-- Google Ads -->
+    <string name="a">a</string>
+
+    <!-- Onboarding Texts -->
+
+    <!-- Login Page -->
+    <string name="start_title">Exposys Data Labs</string>
+    <string name="start_sub_title">A warm greetings from Exposys! Welcome to Internship app. We will provide you updates about your internship. To continue..
+<br><b>Login</b> if you already have an account.</br>
+<br><b>Register</b> to get started with the app.</br>
+    </string>
+    <string name="illustration_image">Illustration Image</string>
+
+    <!-- Mid Way Login & Registration Page - Botton Text -->
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_login">LOGIN</string>
+
+    <!-- Common in both Register and Login Pages-->
+    <string name="email">Your email</string>
+    <string name="password">Your password</string>
+
+    <!-- Login Page -->
+    <string name="login_title">Login to App</string>
+    <string name="login_sub_title"><font color="#3B8BEF"><b>Login</b></font> if you already have an account.</string>
+    <string name="login_forgot_password">Forgot Password?</string>
+    <string name="login_havent_account">I don\'t have an account <font color="#3B8BEF"><b>Register</b></font></string>
+
+    <!-- Registration Page -->
+
+    <string name="register_title">Create an Account</string>
+    <string name="register_sub_title"><font color="#3B8BEF"><b>Register</b></font> to get started with the app.</string>
+    <string name="register_have_account">I already have an account <font color="#3B8BEF"><b>Login</b></font></string>
+    <string name="full_name">Your Full Name</string>
+    <string name="username">Your Username</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="email_only">Your email</string>
+
+    <!-- Home -->
+    <string name="btn_logout">LOGOUT</string>
+
+    <!-- Internship -->
+    <string name="submit">SUBMIT</string>
+    <string name="apply_now">Apply Now!</string>
+
+
+    <string name="intern_main_title">Internship</string>
+    <string name="intern_main_sub_title"><![CDATA[To get enrolled into online internship & offline internship we request interested candidates to fill the online application form and submit.]]></string>
+
+    <string name="intern_title">INTERNSHIP PROGRAMME PROCESS:</string>
+    <string name="intern_points">1. Mini Project Assignment.\n2. Report Submission.\n3. Time Period: 1 week - 6 months\n4. This is just a request application. Actual application will be mailed to the email provided in application.\n\nStipend Range: Based on Performance\nRegistration Fee: Rs 500/-(Only online Payment Accepted)</string>
+
+    <string name="benefits_title">BENEFITS FOR STUDENTS:</string>
+    <string name="benefits_point">1. Internship certificate\n2. Work on real time projects\n3. Based on Performance the candidate will be given Job offer for full time employment\n4. Industry Exposure\n5. Guidance from Industry Experts\n6. Freelance Projects</string>
+
+    <string name="phone">Your Phone Number</string>
+
+    <!-- Drop Box -->
+    <string name="select">Internship In?</string>
+    <string name="imp_points">1. Your password should be greater than 8 character and should contain atleast one Capital letter, Small letter, Special character and Number.\n2. You should fill all the field.\n3. If we found any ids are fake we will permanently remove your account.\nIf any queries contact the developer.</string>
+
+
+    <!-- Nav -->
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyActivity"
+    android:orientation="vertical"
+    android:background="@color/blue_700"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:src="@drawable/ic_verify"
+        app:layout_constraintBottom_toTopOf="@+id/VerifyTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/VerifyTitle"
+        style="@style/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify your account"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/VerifySubTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/VerifySubTitle"
+        style="@style/SubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your account is not verified. Check your mail."
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/resendButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/resendButton"
+        style="@style/Button_White"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resend verification mail"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/VerifyPoints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/VerifyPoints"
+        style="@style/PointNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Check your mail.\n2. Click the link in the mail.\n3. Verify your account.\4. If you have not received the mail, click on above button to resend it."
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="90dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
